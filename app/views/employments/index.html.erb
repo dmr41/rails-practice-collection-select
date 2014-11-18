@@ -12,6 +12,7 @@
       <th>Person</th>
       <th>Job Title</th>
       <th>Location</th>
+      <th>edit</th>
     </tr>
   </thead>
   <tbody>
@@ -21,6 +22,7 @@
         <td><em><%=employment.person.first_name%></em></td>
         <td><em><%=employment.job_title.name%></em></td>
         <td><em><%=employment.location.name%></em></td>
+        <td><em><%= link_to "edit", edit_employment_path(employment) %></em></td>
       </tr>
     <% end %>
   </tbody>

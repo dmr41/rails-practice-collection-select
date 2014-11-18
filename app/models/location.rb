@@ -5,4 +5,6 @@ class Location < ActiveRecord::Base
   has_many :organzations, through: :employments
   has_many :people, through: :employments
 
+  validates :name, presence: true
+
 end

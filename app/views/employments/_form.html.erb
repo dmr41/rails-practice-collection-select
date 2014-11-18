@@ -1,4 +1,11 @@
 <%= form_for @employment do |f| %>
+    <div class="alert alert-danger">
+      <% @employment.errors.full_messages.each do |full_mess| %>
+        <ul>
+          <li><%= full_mess %></li>
+        </ul>
+      <% end %>
+    </div>
 
   <div class="well">
   </div>
